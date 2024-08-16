@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --primary-text-color: rgb(196, 0, 0);
+    --background-color: #282828;
+    --secondary-text-color: #f9f6ef;
+    --icons-color:rgba(197, 0, 0, 0.618);
+}
+
+.container-1{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.T-H2 {
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    margin-right: 52px;
+}
+.T-H2::selection{
+    background-color: transparent;
+}
+
+.icon {
+    filter: invert(100%);
+}
+
+/* Side panel */
+.openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background-color:transparent;
+    border-radius: 50%; /* Makes the button circular */
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:#252525;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel.open {
+    width: 250px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 0px 12px 12px 12px;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    left: 60%;
+    border-radius: 50%;
+}
+.App-logo{
+    width: 35px;
+    height: 35px;
+    background:var(--primary-text-color);
+    padding: 4px;
+    border-radius: 50%;
+    margin-top: 14px;
+}
+.hr-1{
+    background:var(--primary-text-color);
+    border-radius: 10px;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 30%;
+}
+.hr-main{
+    margin: 0px 24px;
+}
+#setting{
+    background:var(--primary-text-color);
+    color: var(--background-color);
+    padding: 4px;
+    border-radius: 50%;
+    margin-right:14px ;
+    padding: 9px;
+
+}
+#house,#about,#faq,#contact{
+    margin-right: 8px;
+    font-size: 18px;
+} 
+.faq{
+    position: relative;
+    left:4px
+}
+.slider-end{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+.hr-end{
+    background:var(--primary-text-color);
+    border-radius: 10px;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 30%;
+    margin: 0 0 8px 0;
+}
+.slide-bottom{
+    bottom: 0;
+
+    position: absolute;
+    width: 100%;
+}
+
+.section{
+    width: 100%;
+    height: 90vh;
+    background-color:#1f1f1f ;
+}
+.footer{
+    width: 100%;
+    height: 20vh;
+    background: var(--background-color);
+}
+.f-hr{
+    width:100%;
+    background-color: var(--primary-text-color);
+    height:1px;
+    opacity: 35%;
+    border: none;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #ff0000;
+}
+.footer .contact-info {
+    margin: 10px 0;
+    color: #555;
+}
+.home:hover{
+    background: #333;
+    border-radius:16px ;
+
+}
+.setting:hover{
+    background: #333;
+    border-radius:16px ;
+}
+.support:hover{
+    background: #333;
+    border-radius:16px ;
+}
+.contact:hover{
+    background: #333;
+    border-radius:16px ;
+
+}
+.about:hover{
+    background: #333;
+    border-radius:16px ;
+}
+.faq:hover{
+    background: #333;
+    border-radius:16px ;
+}
